@@ -36,7 +36,7 @@ jobs:
           context: .
           file: WebApplication1/Dockerfile
           push: true
-          tags: sanguyen231198/argocd-course-webapp:${{ github.event.pull_request.head.sha }}
+          tags: nttsa123456/argocd-course-webapp:${{ github.event.pull_request.head.sha }}
   update-image-tag-in-helm:
     runs-on: ubuntu-latest
     needs: docker-build-push
@@ -60,7 +60,7 @@ jobs:
       - uses: actions-ecosystem/action-add-labels@v1
         with:
           labels: |
-            preview
+            bug
 
 
 
