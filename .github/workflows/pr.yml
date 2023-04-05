@@ -60,7 +60,7 @@ jobs:
       - uses: actions-ecosystem/action-add-labels@v1
         with:
           labels: |
-            preview
+            bug
 
 
 
